@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contacto - Windmill City</title> 
+</head>
+
+ <body>
+<header>
+<h1>Contacto - WindmillCity</h1>
+ <p>Ponte en contacto con nosotros</p>
+      <nav aria-label="Menú principal">
+<ul>
+        <a href="index.html">Inicio</a>
+        <a href="ciudad.html">La Ciudad</a>
+        <a href="lugares.html">Lugares</a>
+        <a href="contacto.html">Contacto</a>
+</ul>
+      </nav>
+</header>
+<main>
+<section>
+    <h2>Contacto</h2>
+    <p>Completa el formulario y a la brevedad nos comunicaremos contigo</p>
+
+    <form action="/enviar" method="post">
+    <div>
+        <label for="nombre"> Nombre y Apellido</label>
+        <input type=" text"
+               id="nombre"
+               name="nombre"
+               required>
+    </div>
+
+    <div>
+        <label for="email">Correo Electronico</label>
+        <input type="email"
+               id="email"
+               name="email"
+               requiered>
+    </div>
+    <div> 
+    <label for="telefono">Telefono</label>
+     <input type="tel"
+            id="telefono"
+            name="telefono">
+    </div>     
+      
+    <div>
+      <label for="fecha">Fecha de nacimiento</label>
+        <input type="date"
+               id="fecha"
+               name="fecha"
+               requiered>
+    </div>
+    
+    <div>
+     <label for="Motivo">Motivo</label>
+     <select id="Motivo" name="Motivo">
+       <option value="">Elegir una opcion</option>
+       <option value="transportes">Medios de transporte</option>
+       <option value="alojamiento">Alojamiento</option>
+       <option value="eventos">Eventos</option>
+       <option value="otros">Otros</option>
+       <label for="mensaje">Mensaje</label>
+     </select>
+       <textarea id="mensaje"
+                 name="mensaje"
+                 rows="6"
+                 cols="25">
+        </textarea>
+    </div>  
+    <div>
+    <input type="checkbox"
+           id="novedades"
+           name="novedades">
+    <label for="novedades">Quiero recibir novedades</label>
+    </div>
+    
+    
+    <fieldset>
+        <legend>Preferencia de contacto</legend>
+        <input type="radio"
+               id="contacto-email"
+               name="preferencia"
+               value="email">
+        <label for="contacto-email">Email</label>
+
+        <input type="radio"
+               id="contacto-telefono"
+               name="preferencia"
+               value="telefono">
+        <label for="contacto-telefono">Telefono</label>       
+    </fieldset>
+      
+    <div>
+     <button type="submit">Enviar</button>
+     <button type="reset">Borrar</button>
+    </div> 
+    </form>
+</section>
+
+<section>
+    <h2>Tambien nos podes encontrar en</h2>
+    <address>
+        <p><a href="tel:+541123456789" arial-label="Llamar al centro de atencion">📞</a></p>
+        <p><a href="mailto:info@windmill.com.ar" aria-label="Enviar un correo al Centro de atencion">✉️</a></p>
+        <p><a href="https://maps.google.com/" target="_blank" aria-label="Ver ubicación en Google Maps">📍</a></p>
+        <p><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">📷</a></p>
+    </address>
+</section>
+</main>
+
+<footer>
+    <nav arial-label="Menu del pie de pagina">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <p><small>&copy; 2026 WindmillCity</small></p>
+</footer>
+ </body>

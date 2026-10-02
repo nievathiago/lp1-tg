@@ -1,1 +1,12 @@
+:root{
+    --color-primario: #1A4731;
+    --color-secundario: #343498;
+    --texto: #F9FAF7; 
+    --fondo: #A39E9E;
 
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body{
+    font-size: 16px;
+}

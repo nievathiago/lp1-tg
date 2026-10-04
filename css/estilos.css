@@ -22,18 +22,18 @@ body{
 
 h1 {font-size: 2rem; color: var(--color-primario); }
 h2 { font-size: 1.5rem; color: var(--color-secundario); margin-bottom: 1rem; }
-h3 { font-size: 1.5rem; color: var(--color-secundario); margin-bottom: 1rem; }
+h3 { font-size: 1.2rem; color: var(--color-secundario); margin-bottom: 1rem; }
 
 /*HEADER */
-.header{
+header{
     background-color: var(--color-fondo);
     color: white;
     padding: 1rem 1.5rem;
 }
 
 
-.footer {
-  background-color: var(--verde-oscuro);
+footer {
+  background-color: var(--color-primario);
   color: white;
   padding: 1.5rem;
   text-align: center;
@@ -43,3 +43,57 @@ h3 { font-size: 1.5rem; color: var(--color-secundario); margin-bottom: 1rem; }
 footer a { 
   color: var(--color-texto); 
 }
+
+/* SECCIONES DE CONTENIDO */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+article {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* NAVEGACIÓN */
+nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+

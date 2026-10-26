@@ -1,8 +1,8 @@
 :root{  /*VARIABLES */
-    --color-primario: #da00f7;
-    --color-secundario: #02df02;
+    --color-primario: hsl(236, 88%, 20%);
+    --color-secundario: #c7bc58;
     --color-texto: #F9FAF7; 
-    --color-fondo: #A39E9E;
+    --color-fondo: rgb(48, 41, 41);
     --fuente: "Montserrat", sans-serif;
 
 }
@@ -10,15 +10,28 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body{
-    font-family: var(--fuente);
-    font-size: 16px;
-    color: var(--color-texto);
-    background-color: var(--color-fondo);
-    line-height: 1.6;
-    margin: 0 auto;
-    padding: 0 1rem;
+  font-family: var(--fuente);
+  font-size: 16px;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  background-image: url("../img/WI_1.jpg");
+  background-size:  cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
+
+main{
+  background-color: rgba(255, 255, 255, 0.82);
+  padding: 30px;
+  margin: 20px;
+  border-radius: 12px;
+}
+
 
 h1 {font-size: 2rem; color: var(--color-primario); }
 h2 { font-size: 1.5rem; color: var(--color-secundario); margin-bottom: 1rem; }
@@ -30,13 +43,39 @@ h3 { font-size: 1.5rem; color: var(--color-secundario); margin-bottom: 1rem; }
     color: white;
     padding: 1rem 1.5rem;
 }
+/*NAVEGACION */
+nav{
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a{
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
 
 
+/*Diseño Imagen de Portada*/
+.imagen-portada {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
 
-
-
-
-
+/*PIE DE PAGINA*/
 .footer {
   background-color: var(--verde-oscuro);
   color: white;

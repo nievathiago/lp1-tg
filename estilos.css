@@ -1,0 +1,185 @@
+:root{  /*VARIABLES */
+    --color-primario: hsl(236, 88%, 20%);
+    --color-secundario: #635907;
+    --color-texto: hsla(0, 0%, 0%, 0.87); 
+    --color-fondo: rgb(48, 41, 41);
+    --fuente: "Lato", sans-serif;
+
+}
+/*RESET */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body{
+  font-family: var(--fuente);
+  font-size: 16px;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  background-image: url("../img/WI_1.jpg");
+  background-size:  cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+main{
+  background-color: rgba(255, 255, 255, 0.479);
+  padding: 30px;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+/*TITULO*/
+h1 {font-size: 2rem; color: var(--color-primario); 
+}
+
+
+/*SUBTITULOS*/
+h2, h3, h4, h5, h6 {
+    font-family: var(--fuente);
+    color: var(--color-secundario);
+}
+
+/*HEADER */
+header{
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+header h1 {
+    color: #174b64;
+    font-family: var(--fuente);
+    font-size: 48px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/*DESCRIPCION DE LOS TITULOS*/
+header p {
+    color: #416773;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+/*ANIMACION DEL TITULO h1*/
+header h1:hover {
+    transform: translateY(-6px);
+    color: #174b64;
+}
+
+
+
+
+
+/*NAVEGACION */
+nav{
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a{
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/*Diseño Imagen de Portada*/
+.imagen-portada {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+/*PIE DE PAGINA*/
+.footer {
+  background-color: var(--verde-oscuro);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer a { 
+  color: var(--color-texto); 
+}
+
+
+/*DISEÑO BOTONES PRIMARIOS */
+nav .boton-primary {
+    background-color: #247ba0;
+    border-color: #247ba0;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav .boton-primary:hover {
+    background-color: #155d7a;
+    border-color: #155d7a;
+    color: rgb(0, 0, 0);
+    transform: translateY(-2px);
+}
+
+
+/*TITULO DE CADA LUGAR*/
+.lugar-card{
+  background-color:rgba(240, 248, 255, 0.685);
+  padding: 20px;
+  margin: 20px;
+  max-width: 800px;
+  border-radius: 12px;
+  border-left: 5px solid black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.979);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lugar-card h3 {
+    color: var(--color-secundario);
+    margin-top: 0;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #000000;
+    display: table;
+}
+
+
+/*DESCRIPCION DE CADA LUGAR*/
+.lugar-card P {
+  font-family: var(--fuente);
+  color: var(--color-texto);
+  font-size: 17px;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+/*ANIMACIONES DE CADA LUGAR*/
+.lugar-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+}

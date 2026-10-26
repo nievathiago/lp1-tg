@@ -1,6 +1,6 @@
 :root{  /*VARIABLES */
     --color-primario: hsl(236, 88%, 20%);
-    --color-secundario: #c7bc58;
+    --color-secundario: #635907;
     --color-texto: hsla(0, 0%, 0%, 0.87); 
     --color-fondo: rgb(48, 41, 41);
     --fuente: "Lato", sans-serif;
@@ -32,10 +32,16 @@ main{
   border-radius: 12px;
 }
 
+/*TITULO*/
+h1 {font-size: 2rem; color: var(--color-primario); 
+}
 
-h1 {font-size: 2rem; color: var(--color-primario); }
-h2 { font-size: 1.5rem; color: var(--color-secundario); margin-bottom: 1rem; }
-h3 { font-size: 1.5rem; color: var(--color-secundario); margin-bottom: 1rem; }
+
+/*SUBTITULOS*/
+h2, h3, h4, h5, h6 {
+    font-family: var(--fuente);
+    color: var(--color-secundario);
+}
 
 /*HEADER */
 header{
@@ -54,6 +60,7 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
+/*DESCRIPCION DE LOS TITULOS*/
 header p {
     color: #416773;
     font-size: 18px;
@@ -133,4 +140,30 @@ nav .boton-primary:hover {
     border-color: #155d7a;
     color: rgb(0, 0, 0);
     transform: translateY(-2px);
+}
+
+
+/*TITULO DE CADA LUGAR*/
+.lugar-card{
+  padding: 20px;
+  margin: 20px;
+  max-width: 800px;
+  border-radius: 12px;
+  border-left: 5px solid black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.685);
+}
+
+.lugar-card h3 {
+    color: var(--color-secundario);
+    margin-top: 0;
+}
+
+/*DESCRIPCION DE CADA LUGAR*/
+.lugar-card P {
+  font-family: var(--fuente);
+  color: var(--color-texto);
+  font-size: 17px;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 0;
 }

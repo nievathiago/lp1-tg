@@ -22,14 +22,27 @@ body{
   background-size:  cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 
+/*Diseño de los principales*/
 main{
   background-color: rgba(255, 255, 255, 0.479);
-  padding: 30px;
+  padding: 20px;
   margin: 20px;
   border-radius: 12px;
+  align-items: start;
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0 , 1fr));
+  gap: 25px;
+  box-sizing: border-box;
+}
+
+/*Diseño de columnas de los Subtitulos*/
+main > h2 {
+  grid-column: 1/ -1;
+  text-align: center;
 }
 
 /*TITULO*/
@@ -75,9 +88,6 @@ header h1:hover {
 }
 
 
-
-
-
 /*NAVEGACION */
 nav{
   padding: 40px 20px;
@@ -114,17 +124,67 @@ nav ul {
   display: block;
 }
 
+/*DISEÑO DE IMAGENES DE LUGARES*/
+.lugar-card img{
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 15px 0;
+  box-sizing: border-box;
+  max-width: none;
+}
+
 /*PIE DE PAGINA*/
 .footer {
   background-color: var(--verde-oscuro);
-  color: white;
-  padding: 1.5rem;
+  color: #ffffff;
+  padding: 35px 30px 15px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 35px;
+  border-top: 4px solid #247ba0;
+  box-shadow: 0 -4px 15px;
 }
-
 footer a { 
   color: var(--color-texto); 
+}
+
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 35px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.footer-isle{
+  max-width: 450px;
+}
+
+.footer-isle h2 {
+  color: red;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.footer-isle p{
+  color: #fff;
+  line-height: 1.7;
+}
+
+.footer-enlaces h3 {
+  color: red;
+  margin-bottom: 5px;
+}
+
+.footer-enlaces a{
+  color: #030303b7;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3, ease;
 }
 
 
@@ -150,13 +210,17 @@ nav .boton-primary:hover {
 /*TITULO DE CADA LUGAR*/
 .lugar-card{
   background-color:rgba(240, 248, 255, 0.685);
-  padding: 20px;
-  margin: 20px;
-  max-width: 800px;
+  padding: 18px;
+  margin: 0;
+  min-width: 0;
+
   border-radius: 12px;
   border-left: 5px solid black;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.979);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .lugar-card h3 {

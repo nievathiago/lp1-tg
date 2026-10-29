@@ -248,61 +248,142 @@ nav .boton-primary:hover {
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
 }
 
-/*ESTRUCTURA DE CONTACTOS*/
+/*CONTACTO CONTENEDOR*/
 .contacto-contenedor{
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 30px;
-  max-width: 1100px;
-  margin: 35px auto;
-  padding: 25px;
-  align-items: stretch;
-}
-
-/*CONTACTO INFORMATIVO*/
-.contacto-info {
-  background: rgba(18, 58, 58, 0.94);
-  color: white;
-  padding: 35px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display:flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  margin: 35px auto;
+  align-items: start;
+  padding: 24px;
 }
 
+/*CONCANTO INFO*/
+.contacto-info{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  background: rgba(18, 59, 76, 0.94);
+  color: white;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/*TITULO*/
 .contacto-info h2{
-  color: var(--color-secundario);
-  font-size: 30px;
-  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.664);
+  font-size: 28px;
+  margin: 0 0 6px;
+  text-align: right;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .contacto-info > p {
-  line-height: 1.9;
-  margin: 0 0 8px;
   color: #e0edf2;
-}
-
-.contacto-dato {
-  border-left: 3px solid #7fc8e5;
-  padding-left: 15px;
-  margin-top: 25px;
-}
-
-.contacto-dato h3{
-  margin-bottom: 8px;
-}
-
-.contacto-dato p {
-  color: #e8edf2;
-}
-
-.contacto-info .contacto-dato{
-  display: block;
-  width: 100px;
-  padding: 22px;
+  line-height: 1.6;
   margin: 0;
+  text-align: left;
+}
+
+/*TARJETAS INDIVIDUALES*/
+.contacto-dato{
+  display: block;
+  width: 100%;
+  padding: 18px;
+  margin: 0;
+  border: 1px solid #000000;
+  border-left: 5px solid black;
+  border-radius: 10px;
   box-sizing: border-box;
-  border-left: 4px solid #7fc8e5;
-  border-radius: 12px;
-  border: 1px solid;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contacto-dato:hover{
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/*TITULOS TARJETAS*/
+.contacto-dato h3{
+  color: #7fc8e5;
+  font-size: 19px;
+  margin:0 0 10px;
+}
+
+/*TEXTO TARJETAS*/
+.contacto-dato p {
+  color: #edf6fa;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/*ENLACES DE LA TARJETA*/
+.contacto-dato a{
+  color:#ffffff;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contacto-dato a:hover{
+  color: #7fc8e5;
+  text-decoration: underline;
+}
+
+/*CONTENEDOR DE CONTACTO REDES*/
+.contacto-redes{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 18px;
+  margin: 0;
+  border: 1px solid #000000;
+  border-left: 5px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contacto-redes:hover{
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/*TITULO REDES*/
+.contacto-redes h3{
+  color: #7fc8e5;
+  font-size: 19px;
+  margin:0 0 10px;
+}
+
+/*LISTADO DE ENLACES*/
+.contacto-redes address{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-style: normal;
+}
+
+.contacto-redes address a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.contacto-redes address a:hover {
+    background: #247ba0;
+    transform: translateY(-3px);
 }

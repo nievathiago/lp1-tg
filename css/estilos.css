@@ -208,3 +208,44 @@ nav .boton-primary:hover {
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
 }
 
+/* Tarjetas de la página Ciudad */
+.ciudad-card {
+    background-color: rgba(240, 248, 255, 0.685);
+    padding: 18px;
+    margin: 0;
+    min-width: 0;
+    border-radius: 12px;
+    border-left: 5px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.979);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Animación al pasar el mouse */
+.ciudad-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+}
+
+/* Tarjetas de la página Contacto */
+.contacto-info,
+.contacto-formulario {
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+    box-sizing: border-box;
+}
+
+/* Estilos de los íconos de contacto */
+.contacto-redes a i {
+    font-size: 36px;
+}
+
+/* Organización de los íconos de contacto */
+.contacto-redes address {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}

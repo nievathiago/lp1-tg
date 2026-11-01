@@ -6,7 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Contacto - Windmill City</title>
+    <title>Contacto - Windmill Isle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -33,7 +35,7 @@
 <section class="contacto-info">
     <h2>¡Hablemos!</h2>
     <p>
-        ¿Tenes preguntas sobre Wilndmill Isle? <br>
+        ¿Tenes preguntas sobre Windmill Isle? <br>
         Completa el formulario y contanos en que podemos ayudarte.
     </p>
 
@@ -48,93 +50,114 @@
     </div>
 
     <div class="contacto-redes">
-        <h3>📲 Contacto Directo</h3>
-        <address>
-        <p><a href="tel:+541123456789" aria-label="Llamar al centro de atencion">📱</a></p>
-        <p><a href="mailto:info@windmill.com.ar" aria-label="Enviar un correo al Centro de atencion">✉️</a></p>
-        <p><a href="https://maps.google.com/" target="_blank" aria-label="Ver ubicación en Google Maps">📍</a></p>
-        <p><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">📷</a></p>
+    <h3>Contacto Directo</h3>
+    <address>
+        <p>
+            <a href="https://wa.me/541123456789" target="_blank" aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </p>
+        <p>
+            <a href="mailto:info@windmill.com.ar" aria-label="Enviar un correo">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+        </p>
+        <p>
+            <a href="https://maps.google.com/" target="_blank" aria-label="Ver ubicación en Google Maps">
+                <i class="bi bi-geo-alt-fill"></i>
+            </a>
+        </p>
+        <p>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </p>
     </address>
-    </div>
+</div>
 </section>
-<section>
+<section class="contacto-formulario">
     <h2>Contactanos</h2>
-    <p>Completa el formulario y a la brevedad nos comunicaremos contigo</p>
+    <p>Completa el formulario y a la brevedad nos comunicaremos contigo.</p>
 
     <form action="/enviar" method="post">
-    <div>
-        <label for="nombre"> Nombre y Apellido</label>
-        <input type=" text"
-               id="nombre"
-               name="nombre"
-               required>
-    </div>
 
-    <div>
-        <label for="email">Correo Electronico</label>
-        <input type="email"
-               id="email"
-               name="email"
-               requiered>
-    </div>
-    <div> 
-    <label for="telefono">Telefono</label>
-     <input type="tel"
-            id="telefono"
-            name="telefono">
-    </div>     
-      
-    <div>
-      <label for="fecha">Fecha de nacimiento</label>
-        <input type="date"
-               id="fecha"
-               name="fecha"
-               requiered>
-    </div>
-    
-    <div>
-     <label for="Motivo">Motivo</label>
-     <select id="Motivo" name="Motivo">
-       <option value="">Elegir una opcion</option>
-       <option value="transportes">Medios de transporte</option>
-       <option value="alojamiento">Alojamiento</option>
-       <option value="eventos">Eventos</option>
-       <option value="otros">Otros</option>
-       <label for="mensaje">Mensaje</label>
-     </select>
-       <textarea id="mensaje"
-                 name="mensaje"
-                 rows="6"
-                 cols="25">
-        </textarea>
-    </div>  
-    <div>
-    <input type="checkbox"
-           id="novedades"
-           name="novedades">
-    <label for="novedades">Quiero recibir novedades</label>
-    </div>
-    
-    
-    <fieldset>
-        <legend>Preferencia de contacto</legend>
-        <input type="radio"
-               id="contacto-email"
-               name="preferencia"
-               value="email">
-        <label for="contacto-email">Email</label>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control"
+                   id="nombre" name="nombre" required>
+        </div>
 
-        <input type="radio"
-               id="contacto-telefono"
-               name="preferencia"
-               value="telefono">
-        <label for="contacto-telefono">Telefono</label>       
-    </fieldset>
-      
-    <div>
-     <button type="submit">Enviar</button>
-     <button type="reset">Borrar</button>
-    </div> 
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control"
+                   id="email" name="email" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control"
+                   id="telefono" name="telefono">
+        </div>
+
+        <div class="mb-3">
+            <label for="fecha" class="form-label">Fecha de nacimiento</label>
+            <input type="date" class="form-control"
+                   id="fecha" name="fecha">
+        </div>
+
+        <div class="mb-3">
+            <label for="motivo" class="form-label">Motivo de consulta</label>
+            <select class="form-select" id="motivo" name="motivo">
+                <option value="">Elegir una opción</option>
+                <option value="transportes">Medios de transporte</option>
+                <option value="alojamiento">Alojamiento</option>
+                <option value="eventos">Eventos</option>
+                <option value="otros">Otros</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control"
+                      id="mensaje" name="mensaje"
+                      rows="5"></textarea>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox"
+                   id="novedades" name="novedades">
+            <label class="form-check-label" for="novedades">
+                Quiero recibir novedades
+            </label>
+        </div>
+
+        <fieldset class="mb-3">
+            <legend>Preferencia de contacto</legend>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio"
+                       id="contacto-email" name="preferencia"
+                       value="email">
+                <label class="form-check-label" for="contacto-email">
+                    Email
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio"
+                       id="contacto-telefono" name="preferencia"
+                       value="telefono">
+                <label class="form-check-label" for="contacto-telefono">
+                    Teléfono
+                </label>
+            </div>
+        </fieldset>
+
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-outline-secondary">Borrar</button>
+        </div>
+
     </form>
 </section>
 </main>
@@ -158,4 +181,7 @@
             <p>&copy; 2026 Windmill Isle. Todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
  </body>
+ 
+</html>

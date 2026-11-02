@@ -1,5 +1,5 @@
 :root{  /*VARIABLES */
-    --color-primario: hsl(236, 88%, 20%);
+    --color-primario: hsl(236, 100%, 50%);
     --color-secundario: #635907;
     --color-texto: hsla(0, 0%, 0%, 0.87); 
     --color-fondo: rgb(48, 41, 41);
@@ -27,7 +27,7 @@ body{
 
 /*Diseño de los principales*/
 main{
-  background-color: rgba(255, 255, 255, 0.479);
+  background-color: rgba(255, 255, 255, 0.679);
   padding: 20px;
   margin: 20px;
   border-radius: 12px;
@@ -60,7 +60,9 @@ header{
     color: white;
     padding: 35px 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.356);
+    background-color: rgba(255, 255, 255, 0.679);
+
+    border-radius: 0px 0px 8px 8px;
 }
 
 header h1 {
@@ -137,16 +139,25 @@ nav ul {
 
 /*PIE DE PAGINA*/
 .footer {
-  background-color: var(--verde-oscuro);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgb(0, 0, 0);
   padding: 1.5rem;
   text-align: center;
   margin-top: 2rem;
-}
-footer a { 
-  color: var(--color-texto); 
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+
+  border-radius: 8px;
 }
 
+footer a { 
+  color: rgb(0, 0, 0); 
+  padding: 0.5rem;
+}
+
+footer a:hover {
+  color: blue;
+}
 
 /*DISEÑO BOTONES PRIMARIOS */
 nav .boton-primary {
@@ -175,8 +186,8 @@ nav .boton-primary:hover {
   min-width: 0;
 
   border-radius: 12px;
-  border-left: 5px solid black;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.979);
+  border-left: 5px solid #7a6c03;;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
   width: 100%;
@@ -186,7 +197,7 @@ nav .boton-primary:hover {
 .lugar-card h3 {
     color: var(--color-secundario);
     margin-top: 0;
-    padding-bottom: 1px;
+    padding-bottom: 4px;
     border-bottom: 1px solid #000000;
     display: table;
 }
@@ -197,7 +208,7 @@ nav .boton-primary:hover {
   font-family: var(--fuente);
   color: var(--color-texto);
   font-size: 17px;
-  line-height: 1.7;
+  line-height: 1.8;
   text-align: justify;
   margin-bottom: 0;
 }
@@ -215,8 +226,8 @@ nav .boton-primary:hover {
     margin: 0;
     min-width: 0;
     border-radius: 12px;
-    border-left: 5px solid black;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.979);
+    border-left: 5px solid #7a6c03;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.685);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
 }

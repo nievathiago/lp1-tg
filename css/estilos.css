@@ -38,6 +38,18 @@ main{
   box-sizing: border-box;
 }
 
+/*Carrusuel debajo del texto*/
+main section{
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+
+}
+
+#carouselExampleInterval {
+    width: 100%;
+}
+
 /*Diseño de columnas de los Subtitulos*/
 main > h2 {
   grid-column: 1/ -1;

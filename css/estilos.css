@@ -272,3 +272,22 @@ nav .boton-primary:hover {
     gap: 20px;
     align-items: center;
 }
+
+/* Mapa de ubicación */
+.mapa {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mapa h3 {
+    margin-bottom: 12px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 450px;
+    display: block;
+    border-radius: 10px;
+}

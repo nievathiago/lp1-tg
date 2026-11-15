@@ -423,7 +423,7 @@ body:not(.dark-mode) textarea::placeholder {
 body.dark-mode input,
 body.dark-mode textarea,
 body.dark-mode select {
-    color: #0a0a0a;
+    color: #dba6a6;
     background-color: #d4eb53;
     border-color: #8b8585;
 }
@@ -435,4 +435,44 @@ body.dark-mode label {
 body.dark-mode input::placeholder,
 body.dark-mode textarea::placeholder {
     color: #c23a3a;
+}
+
+
+/*BOTON HAMBURGUESA*/
+.navbar-toggler {
+    border: 2px solid #d8d0d0;
+    border-radius: 10px;
+    padding: 8px;
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(173, 175, 175, 0.25);
+}
+
+}
+
+
+/* MENÚ EN CELULARES */
+@media (max-width: 991.98px) {
+
+    #menuPrincipal {
+        padding: 15px 0;
+    }
+
+    #menuPrincipal .navbar-nav {
+        gap: 12px !important;
+    }
+
+    #menuPrincipal .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menuPrincipal .boton-primary {
+        display: block;
+        width: 100%;
+    }
+
+    #menuPrincipal #themeToggle {
+        margin-top: 10px;
+    }
 }

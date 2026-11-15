@@ -316,6 +316,7 @@ main.ciudad-main > section.ciudad-card {
     max-width: none;
     margin: 0 0 25px;
 }
+
 /* Boton para volver al encabezado en la página Ciudad */
 .volver-arriba {
     position: fixed;
@@ -355,10 +356,11 @@ body{
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/*MODO CLARO*/
-body{
+
+/* MODO CLARO */
+body:not(.dark-mode) {
     background-color: #06cef1;
-    color: rgba(10, 173, 248, 0.644);
+    color: #212529;
 }
 
 /*MODO OSCURO*/
@@ -383,7 +385,12 @@ body.dark-mode p,
 body.dark-mode span {
     color: #f0c079;
 }
-
+/*DATOS DE LA CIUDAD Modo Oscuro*/
+body.dark-mode .ciudad-main .ciudad-card:last-child h2,
+body.dark-mode .ciudad-main .ciudad-card:last-child dt,
+body.dark-mode .ciudad-main .ciudad-card:last-child dd {
+    color: #f0c079;
+}
 
 
 /*NAVBAR*/
@@ -475,4 +482,15 @@ body.dark-mode textarea::placeholder {
     #menuPrincipal #themeToggle {
         margin-top: 10px;
     }
+}
+
+/* NAVBAR - MODO CLARO */
+body:not(.dark-mode) .navbar {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(5px);
+}
+
+/* NAVBAR - MODO OSCURO */
+body.dark-mode .navbar {
+    background-color: #1c1c1c !important;
 }

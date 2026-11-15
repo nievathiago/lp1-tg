@@ -338,3 +338,58 @@ main.ciudad-main > section.ciudad-card {
 main.contacto-contenedor {
     display: block;
 }
+
+/* Tamaño uniforme del Carousel */
+#carouselExampleInterval .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+/*Moviento entre temas*/
+body{
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*MODO CLARO*/
+body{
+    background-color: #06cef1;
+    color: rgba(10, 173, 248, 0.644);
+}
+
+/*MODO OSCURO*/
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/*TARJETA ICONO*/
+body.dark-mode .card{
+    background-color: rgb(25,25, 25, 0.9);
+    color: white;
+    border-color: #242424;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode span {
+    color: #f0c079;
+}
+
+
+
+/*NAVBAR*/
+body.dark-mode .navbar{
+    background-color: #1c1c1c !important;
+}
+
+/*Enlaces modo oscuro*/
+body.dark-mode a {
+    color: #90caf9;
+}

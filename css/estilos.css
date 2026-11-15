@@ -377,6 +377,8 @@ body.dark-mode .card{
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
+body.dark-mode ol,
+body.dark-mode ul,
 body.dark-mode p,
 body.dark-mode span {
     color: #f0c079;
@@ -392,4 +394,45 @@ body.dark-mode .navbar{
 /*Enlaces modo oscuro*/
 body.dark-mode a {
     color: #90caf9;
+}
+
+/* =========================
+   FORMULARIOS - MODO CLARO
+========================= */
+
+body:not(.dark-mode) input,
+body:not(.dark-mode) textarea,
+body:not(.dark-mode) select {
+    color: #212529;
+    background-color: #ffffff;
+}
+
+body:not(.dark-mode) label {
+    color: #212529;
+}
+
+body:not(.dark-mode) input::placeholder,
+body:not(.dark-mode) textarea::placeholder {
+    color: #6c757d;
+}
+
+/* =========================
+   FORMULARIOS - MODO OSCURO
+========================= */
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    color: #0a0a0a;
+    background-color: #d4eb53;
+    border-color: #8b8585;
+}
+
+body.dark-mode label {
+    color:  #f0c079;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #c23a3a;
 }

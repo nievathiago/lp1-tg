@@ -356,19 +356,6 @@ body{
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
-/* MODO CLARO */
-body:not(.dark-mode) {
-    background-color: #06cef1;
-    color: #212529;
-}
-
-/*MODO OSCURO*/
-body.dark-mode {
-    background-color: #121212;
-    color: white;
-}
-
 /*TARJETA ICONO*/
 body.dark-mode .card{
     background-color: rgb(25,25, 25, 0.9);
@@ -376,73 +363,81 @@ body.dark-mode .card{
     border-color: #242424;
 }
 
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode ol,
-body.dark-mode ul,
-body.dark-mode p,
-body.dark-mode span {
-    color: #f0c079;
-}
-/*DATOS DE LA CIUDAD Modo Oscuro*/
-body.dark-mode .ciudad-main .ciudad-card:last-child h2,
-body.dark-mode .ciudad-main .ciudad-card:last-child dt,
-body.dark-mode .ciudad-main .ciudad-card:last-child dd {
+/* =========================
+   MODO OSCURO
+========================= */
+
+/* Títulos principales */
+body.dark-mode header h1,
+body.dark-mode main h2 {
     color: #f0c079;
 }
 
-
-/*NAVBAR*/
-body.dark-mode .navbar{
-    background-color: #1c1c1c !important;
+/* Secciones de artículos */
+body.dark-mode .lugar-card,
+body.dark-mode .ciudad-card,
+body.dark-mode .contacto-info,
+body.dark-mode .contacto-formulario,
+body.dark-mode .zona-card {
+    background-color: rgba(25, 25, 25, 0.90);
+    color: #ffffff;
+    border-color: #d6a64f;
 }
 
-/*Enlaces modo oscuro*/
-body.dark-mode a {
-    color: #90caf9;
+/* Títulos dentro de los artículos */
+body.dark-mode .lugar-card h3,
+body.dark-mode .ciudad-card h3,
+body.dark-mode .contacto-info h3,
+body.dark-mode .contacto-formulario h3 {
+    color: #f0c079;
 }
 
-/* =========================
-   FORMULARIOS - MODO CLARO
-========================= */
-
-body:not(.dark-mode) input,
-body:not(.dark-mode) textarea,
-body:not(.dark-mode) select {
-    color: #212529;
-    background-color: #ffffff;
+/* Textos de los artículos */
+body.dark-mode .lugar-card p,
+body.dark-mode .ciudad-card p,
+body.dark-mode .contacto-info p,
+body.dark-mode .contacto-formulario p {
+    color: #eeeeee;
+}
+/* Contenedor principal (main) en modo oscuro */
+body.dark-mode main {
+    background-color: rgba(25, 25, 25, 0.90);
+    color: #eeeeee;
 }
 
-body:not(.dark-mode) label {
-    color: #212529;
+/* Textos sueltos dentro del main (párrafo de la página de inicio) */
+body.dark-mode main p {
+    color: #eeeeee;
 }
 
-body:not(.dark-mode) input::placeholder,
-body:not(.dark-mode) textarea::placeholder {
-    color: #6c757d;
+/* Header en modo oscuro */
+body.dark-mode header {
+    background-color: rgba(25, 25, 25, 0.90);
 }
 
-/* =========================
-   FORMULARIOS - MODO OSCURO
-========================= */
-
-body.dark-mode input,
-body.dark-mode textarea,
-body.dark-mode select {
-    color: #dba6a6;
-    background-color: #d4eb53;
-    border-color: #8b8585;
+body.dark-mode header p {
+    color: #cfcfcf;
 }
 
-body.dark-mode label {
-    color:  #f0c079;
+/* Footer en modo oscuro */
+body.dark-mode .footer {
+    background-color: rgba(25, 25, 25, 0.90);
+    color: #eeeeee;
 }
 
-body.dark-mode input::placeholder,
-body.dark-mode textarea::placeholder {
-    color: #c23a3a;
+body.dark-mode .footer h2,
+body.dark-mode .footer h3 {
+    color: #f0c079;
 }
+
+body.dark-mode .footer a {
+    color: #eeeeee;
+}
+
+body.dark-mode .footer a:hover {
+    color: #f0c079;
+}
+
 
 
 /*BOTON HAMBURGUESA*/
@@ -450,12 +445,12 @@ body.dark-mode textarea::placeholder {
     border: 2px solid #d8d0d0;
     border-radius: 10px;
     padding: 8px;
-
+}
 .navbar-toggler:focus {
     box-shadow: 0 0 0 3px rgba(173, 175, 175, 0.25);
 }
 
-}
+
 
 
 /* MENÚ EN CELULARES */

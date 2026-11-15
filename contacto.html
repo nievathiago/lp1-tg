@@ -15,22 +15,58 @@
  <body>
 <header>
 <h1>Windmill Isle</h1>
- <p>Estamos para ayudarte a descubrir Windmill Isle.</p>
-    <nav aria-label="Menu-principal"> 
-            <ul class="nav justify-content-center gap:-3">
-                <li class="nav-item"> 
-                    <a class="boton boton-primary" href="index.html">Inicio</a> </li>
-                <li class="nav-item"> 
-                    <a class="boton boton-primary" href="lugares.html">Lugares Turisticos</a> </li>
-                <li class="nav-item"> 
-                    <a class="boton boton-primary" href="ciudad.html">Historia De La Ciudad</a> </li>
-                <li class="nav-item"> 
-                    <a class="boton boton-primary " href="contacto.html">Nuestro Contactos</a> </li>
-                <button id="themeToggle" class="btn btn-outline-secundary rounded-pill">
+<nav class="navbar navbar-expand-lg navbar-light" aria-label="Menu principal">
+        <div class="container-fluid">
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+
+            <ul class="navbar-nav justify-content-center align-items-center gap-3 mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link boton boton-primary" href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link boton boton-primary" href="lugares.html">
+                        Lugares Turísticos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link boton boton-primary" href="ciudad.html">
+                        Historia de la Ciudad
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link boton boton-primary" href="contacto.html">
+                        Nuestros Contactos
+                    </a>
+                </li>
+
+            </ul>
+            <div class="d-flex justify-content-center mt-3 mt-lg-0">
+                <button id="themeToggle"
+                        class="btn btn-outline-secondary rounded-pill">
                     🌙 Modo oscuro
                 </button>
-            </ul>
-        </nav>
+            </div>
+
+        </div>
+    </div>
+</nav>
 </header>
 <main class="contacto-contenedor">
     <div class="container-fluid">

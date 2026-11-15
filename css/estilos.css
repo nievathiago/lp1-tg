@@ -334,3 +334,7 @@ main.ciudad-main > section.ciudad-card {
     background-color: #155d7a;
     color: white;
 }
+/* Columnas de Contacto con la grilla de Bootstrap */
+main.contacto-contenedor {
+    display: block;
+}

@@ -291,3 +291,46 @@ nav .boton-primary:hover {
     display: block;
     border-radius: 10px;
 }
+/* Distribución vertical de las zonas con Flexbox */
+.zonas-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.zona-card {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+}
+
+/* Tarjetas de Ciudad apiladas a lo ancho */
+main.ciudad-main {
+    display: block;
+}
+
+main.ciudad-main > section.ciudad-card {
+    width: auto;
+    max-width: none;
+    margin: 0 0 25px;
+}
+/* Boton para volver al encabezado en la página Ciudad */
+.volver-arriba {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1000;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    background-color: #247ba0;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.volver-arriba:hover {
+    background-color: #155d7a;
+    color: white;
+}

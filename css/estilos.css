@@ -505,3 +505,35 @@ body:not(.dark-mode) .navbar {
 body.dark-mode .navbar {
     background-color: #1c1c1c !important;
 }
+
+/* ADAPTACIÓN DE SECCIONES PARA CELULARES */
+
+@media (max-width: 767px) {
+
+    main {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+
+    .lugar-card {
+        width: 100%;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+
+}
+
+/* PÁGINA ACTUAL */
+nav .boton-primary.active {
+    background-color: #155d7a;
+    border-color: #155d7a;
+    color: white !important;
+    box-shadow: 0 0 0 3px rgba(36, 123, 160, 0.25);
+    transform: translateY(-2px);
+}
+
+/* EFECTO HOVER */
+nav .boton-primary.active:hover {
+    background-color: #104b63;
+}

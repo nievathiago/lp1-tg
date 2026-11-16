@@ -381,6 +381,9 @@ body.dark-mode .contacto-info,
 body.dark-mode .contacto-formulario,
 body.dark-mode .zona-card {
     background-color: rgba(25, 25, 25, 0.90);
+	
+	/*background-image: url("../img/WI_2.jpg"); efecto piola */ 
+
     color: #ffffff;
     border-color: #d6a64f;
 }
@@ -404,6 +407,8 @@ body.dark-mode .contacto-formulario p {
 body.dark-mode main {
     background-color: rgba(25, 25, 25, 0.90);
     color: #eeeeee;
+	
+	/*background-image: url("../img/WI_2.jpg"); */
 }
 
 /* Textos sueltos dentro del main (párrafo de la página de inicio) */
@@ -439,7 +444,11 @@ body.dark-mode .footer a:hover {
     color: #f0c079;
 }
 
-
+body.dark-mode {
+	background-image: url("../img/WI_2.jpg");
+	background-size:  cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
 /*BOTON HAMBURGUESA*/
 .navbar-toggler {

@@ -277,6 +277,8 @@ nav .boton-primary:hover {
 .mapa {
     width: 100%;
     margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .mapa h3 {
@@ -285,10 +287,12 @@ nav .boton-primary:hover {
 
 .mapa iframe {
     width: 100%;
-    height: 360px;
+    height: 450px;
+    display: block;
+    border: 0;
     border-radius: 10px;
 }
-/* Distribución vertical de las zonas con Flexbox */
+/* DistribuciÃ³n vertical de las zonas con Flexbox */
 .zonas-flex {
     display: flex;
     flex-wrap: wrap;
@@ -314,7 +318,7 @@ main.ciudad-main > section.ciudad-card {
     margin: 0 0 25px;
 }
 
-/* Boton para volver al encabezado en la página Ciudad */
+/* Boton para volver al encabezado en la pÃ¡gina Ciudad */
 .volver-arriba {
     position: fixed;
     right: 1rem;
@@ -337,7 +341,7 @@ main.contacto-contenedor {
     display: block;
 }
 
-/* Tamaño uniforme del Carousel */
+/* TamaÃ±o uniforme del Carousel */
 #carouselExampleInterval .carousel-item img {
     width: 100%;
     height: 500px;
@@ -350,7 +354,8 @@ main.contacto-contenedor {
 
 /*Moviento entre temas*/
 body{
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, background-image 0.3s ease;
+	
 }
 
 /*TARJETA ICONO*/
@@ -358,19 +363,20 @@ body.dark-mode .card{
     background-color: rgb(25,25, 25, 0.9);
     color: white;
     border-color: #242424;
+	/*background-image: url("../img/WI_2.jpg");*/
 }
 
 /* =========================
    MODO OSCURO
 ========================= */
 
-/* Títulos principales */
+/* TÃ­tulos principales */
 body.dark-mode header h1,
 body.dark-mode main h2 {
     color: #f0c079;
 }
 
-/* Secciones de artículos */
+/* Secciones de artÃ­culos */
 body.dark-mode .lugar-card,
 body.dark-mode .ciudad-card,
 body.dark-mode .contacto-info,
@@ -384,7 +390,7 @@ body.dark-mode .zona-card {
     border-color: #d6a64f;
 }
 
-/* Títulos dentro de los artículos */
+/* TÃ­tulos dentro de los artÃ­culos */
 body.dark-mode .lugar-card h3,
 body.dark-mode .ciudad-card h3,
 body.dark-mode .contacto-info h3,
@@ -392,7 +398,7 @@ body.dark-mode .contacto-formulario h3 {
     color: #f0c079;
 }
 
-/* Textos de los artículos */
+/* Textos de los artÃ­culos */
 body.dark-mode .lugar-card p,
 body.dark-mode .ciudad-card p,
 body.dark-mode .contacto-info p,
@@ -407,7 +413,7 @@ body.dark-mode main {
 	/*background-image: url("../img/WI_2.jpg"); */
 }
 
-/* Textos sueltos dentro del main (párrafo de la página de inicio) */
+/* Textos sueltos dentro del main (pÃ¡rrafo de la pÃ¡gina de inicio) */
 body.dark-mode main p {
     color: #eeeeee;
 }
@@ -441,11 +447,15 @@ body.dark-mode .footer a:hover {
 }
 
 body.dark-mode {
-	background-image: url("../img/WI_2.jpg");
+	background-image: url("../img/WI_2.jpeg");
 	background-size:  cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	
+	transition: background-color 0.3s ease, color 0.3s ease;
+	transition: background-image 0.3s ease, color 0.3s ease;
 
+}
 /*BOTON HAMBURGUESA*/
 .navbar-toggler {
     border: 2px solid #d8d0d0;
@@ -459,7 +469,7 @@ body.dark-mode {
 
 
 
-/* MENÚ EN CELULARES */
+/* MENÃš EN CELULARES */
 @media (max-width: 991.98px) {
 
     #menuPrincipal {
